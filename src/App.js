@@ -81,7 +81,7 @@ function App() {
               />
             </div>
 
-            <button type="submit">
+            <button class="btn-submit" type="submit">
               Agregar Aventurero
             </button>
           </form>
