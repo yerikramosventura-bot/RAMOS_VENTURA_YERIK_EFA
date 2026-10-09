@@ -190,9 +190,20 @@
   margin-top: 0.5rem;
 }
 
-.badge {
+.badge-accepted {
   padding: 0.3rem 0.8rem;
   background-color: #2f855a;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.badge-rejected {
+  padding: 0.3rem 0.8rem;
+  background-color: #c0392b;
   color: #ffffff;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -209,7 +220,14 @@
   border-top: 1px solid #333333;
   font-size: 1rem;
 }
-
+.juramento {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
 
 
 

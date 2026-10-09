@@ -5,7 +5,8 @@ function App() {
   const [formdata, setFormdata] = useState({
     nombre: '',
     clase: '',
-    habilidad: ''
+    habilidad: '',
+    juramento: 'si'
   });
 
   const [carnetdeaventurero, setCarnetdeaventurero] = useState([]);
@@ -27,7 +28,8 @@ function App() {
     setFormdata({
       nombre: '',
       clase: '',
-      habilidad: ''
+      habilidad: '',
+      juramento: 'si'
     });
   };
 
@@ -60,6 +62,7 @@ function App() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="form-group">
               <label htmlFor="clase">Clase:</label>
               <input
@@ -70,6 +73,7 @@ function App() {
                 onChange={handleChange}
               />
             </div>
+
             <div className="form-group">
               <label htmlFor="habilidad">Habilidad:</label>
               <input
@@ -79,6 +83,33 @@ function App() {
                 value={formdata.habilidad}
                 onChange={handleChange}
               />
+            </div>
+
+            <div className="juramento">
+              <label className="juramento">¿Aceptas el código y juramento del Gremio?</label>
+              <div>
+                <label className="form-group">
+                  <input
+                    type="radio"
+                    name="juramento"
+                    value="si"
+                    checked={formdata.juramento === 'si'}
+                    onChange={handleChange}
+                  />
+                  <span>SI</span>
+                </label>
+
+                <label className="form-group">
+                  <input
+                    type="radio"
+                    name="juramento"
+                    value="no"
+                    checked={formdata.juramento === 'no'}
+                    onChange={handleChange}
+                  />
+                  <span>NO</span>
+                </label>
+              </div>
             </div>
 
             <button className="btn-submit" type="submit">
@@ -106,8 +137,12 @@ function App() {
                     </div>
                   </div>
 
-                  <div className="carnet-footer">
-                    <span className="badge">Aventurero aceptado</span>
+                  <div className="carnet-data-footer">
+                    {aventurero.juramento === 'si' ? (
+                      <span className="badge-accepted">Aventurero Aceptado</span>
+                    ) : (
+                      <span className="badge-rejected">Solicitud Rechazada</span>
+                    )}
                   </div>
                 </div>
               ))}
