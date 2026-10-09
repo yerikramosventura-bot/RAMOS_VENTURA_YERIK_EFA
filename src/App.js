@@ -53,7 +53,9 @@ function App() {
 
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="nombre">Nombre:</label>
+              <h3 htmlFor="nombre" className="text-floor">
+                Nombre:
+              </h3>
               <input
                 type="text"
                 name="nombre"
@@ -64,18 +66,29 @@ function App() {
             </div>
 
             <div className="form-group">
-              <label htmlFor="clase">Clase:</label>
-              <input
-                type="text"
+              <h3 htmlFor="clase">Clase / Rol de Combate:</h3>
+              <select className="btn-submit"
+                id="clase"
                 name="clase"
-                placeholder="Tu clase como aventurero"
                 value={formdata.clase}
                 onChange={handleChange}
-              />
+                required
+                
+              >
+                <option value="" disabled>-- Selecciona tu clase --</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Mago">Mago</option>
+                <option value="Paladín">Paladín</option>
+                <option value="Cazador">Cazador</option>
+                <option value="Bardo">Bardo</option>
+                <option value="Picaro">Pícaro</option>
+              </select>
             </div>
 
             <div className="form-group">
-              <label htmlFor="habilidad">Habilidad:</label>
+              <h3 htmlFor="habilidad" className="text-floor">
+                Habilidad:
+              </h3>
               <input
                 type="text"
                 name="habilidad"
@@ -85,8 +98,8 @@ function App() {
               />
             </div>
 
-            <div className="juramento">
-              <label className="juramento">¿Aceptas el código y juramento del Gremio?</label>
+            <div className="text-floor">
+              <label >¿Aceptas el código y juramento del Gremio?</label>
               <div>
                 <label className="form-group">
                   <input

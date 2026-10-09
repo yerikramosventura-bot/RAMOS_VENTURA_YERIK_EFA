@@ -1,6 +1,6 @@
 .header {
-  background-image: linear-gradient(rgba(15, 20, 28, 0.75)), 
-                    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-RPJa0FB5DNuDIK9I1ZcThyCwwUvcKZ5gEN9M_R9Ast7ZX3RzjeWRy0&s=10');
+  background-image: linear-gradient(rgba(15, 20, 28, 0.75)),
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-RPJa0FB5DNuDIK9I1ZcThyCwwUvcKZ5gEN9M_R9Ast7ZX3RzjeWRy0&s=10');
   background-size: cover;
   background-position: center;
   color: #f1c40f;
@@ -15,38 +15,6 @@
   font-size: 2rem;
   color: #f1c40f;
   text-shadow: 2px 2px 6px #000;
-}
-
-.header p {
-  margin-top: 0.5rem;
-  color: #e0c9a6;
-  font-style: italic;
-}
-
-
-
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Georgia', serif;
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-.header {
-  color: #f1c40f;
-  text-align: center;
-  padding: 1.5rem;
-  border-bottom: 3px solid #d4af37;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
-  text-shadow: 2px 2px 4px #000;
 }
 
 .header p {
@@ -220,8 +188,8 @@
   border-top: 1px solid #333333;
   font-size: 1rem;
 }
-.juramento {
-  font-size: 1rem;
+.text-floor {
+  font-size: 1.1rem;
   color: #000000;
   margin-top: 1rem;
   text-align: center;
